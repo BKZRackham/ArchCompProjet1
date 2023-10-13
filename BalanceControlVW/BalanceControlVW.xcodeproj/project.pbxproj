@@ -7,61 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21B3B60E2AD9632C0034932E /* BalanceControlVWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B3B60D2AD9632C0034932E /* BalanceControlVWApp.swift */; };
-		21B3B6102AD9632C0034932E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B3B60F2AD9632C0034932E /* ContentView.swift */; };
-		21B3B6122AD9632D0034932E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B3B6112AD9632D0034932E /* Assets.xcassets */; };
-		21B3B6152AD9632D0034932E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B3B6142AD9632D0034932E /* Preview Assets.xcassets */; };
-		21B3B61F2AD9632D0034932E /* BalanceControlVWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B3B61E2AD9632D0034932E /* BalanceControlVWTests.swift */; };
-		21B3B6292AD9632D0034932E /* BalanceControlVWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B3B6282AD9632D0034932E /* BalanceControlVWUITests.swift */; };
-		21B3B62B2AD9632D0034932E /* BalanceControlVWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B3B62A2AD9632D0034932E /* BalanceControlVWUITestsLaunchTests.swift */; };
+		214EEEBE2AD969B400301919 /* BalanceControlVWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEBD2AD969B400301919 /* BalanceControlVWApp.swift */; };
+		214EEEC02AD969B400301919 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEBF2AD969B400301919 /* ContentView.swift */; };
+		214EEEC22AD969B400301919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214EEEC12AD969B400301919 /* Assets.xcassets */; };
+		214EEEC52AD969B400301919 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214EEEC42AD969B400301919 /* Preview Assets.xcassets */; };
+		214EEECF2AD969B500301919 /* BalanceControlVWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEECE2AD969B500301919 /* BalanceControlVWTests.swift */; };
+		214EEED92AD969B500301919 /* BalanceControlVWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEED82AD969B500301919 /* BalanceControlVWUITests.swift */; };
+		214EEEDB2AD969B500301919 /* BalanceControlVWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEDA2AD969B500301919 /* BalanceControlVWUITestsLaunchTests.swift */; };
+		214EEEEB2AD96A4400301919 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEEA2AD96A4400301919 /* Speaker.swift */; };
+		214EEEED2AD96A6C00301919 /* SpeakersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEEC2AD96A6C00301919 /* SpeakersRepository.swift */; };
+		214EEEEF2AD96A9000301919 /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEEE2AD96A9000301919 /* SpeakerView.swift */; };
+		214EEEF12AD96AAC00301919 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEF02AD96AAC00301919 /* SettingsView.swift */; };
+		214EEEF32AD96AC900301919 /* MixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEF22AD96AC900301919 /* MixView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		21B3B61B2AD9632D0034932E /* PBXContainerItemProxy */ = {
+		214EEECB2AD969B500301919 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 21B3B6022AD9632C0034932E /* Project object */;
+			containerPortal = 214EEEB22AD969B400301919 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 21B3B6092AD9632C0034932E;
+			remoteGlobalIDString = 214EEEB92AD969B400301919;
 			remoteInfo = BalanceControlVW;
 		};
-		21B3B6252AD9632D0034932E /* PBXContainerItemProxy */ = {
+		214EEED52AD969B500301919 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 21B3B6022AD9632C0034932E /* Project object */;
+			containerPortal = 214EEEB22AD969B400301919 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 21B3B6092AD9632C0034932E;
+			remoteGlobalIDString = 214EEEB92AD969B400301919;
 			remoteInfo = BalanceControlVW;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21B3B60A2AD9632C0034932E /* BalanceControlVW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalanceControlVW.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B3B60D2AD9632C0034932E /* BalanceControlVWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWApp.swift; sourceTree = "<group>"; };
-		21B3B60F2AD9632C0034932E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		21B3B6112AD9632D0034932E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		21B3B6142AD9632D0034932E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		21B3B61A2AD9632D0034932E /* BalanceControlVWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalanceControlVWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B3B61E2AD9632D0034932E /* BalanceControlVWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWTests.swift; sourceTree = "<group>"; };
-		21B3B6242AD9632D0034932E /* BalanceControlVWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalanceControlVWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B3B6282AD9632D0034932E /* BalanceControlVWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWUITests.swift; sourceTree = "<group>"; };
-		21B3B62A2AD9632D0034932E /* BalanceControlVWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		214EEEBA2AD969B400301919 /* BalanceControlVW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalanceControlVW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		214EEEBD2AD969B400301919 /* BalanceControlVWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWApp.swift; sourceTree = "<group>"; };
+		214EEEBF2AD969B400301919 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		214EEEC12AD969B400301919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		214EEEC42AD969B400301919 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		214EEECA2AD969B500301919 /* BalanceControlVWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalanceControlVWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		214EEECE2AD969B500301919 /* BalanceControlVWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWTests.swift; sourceTree = "<group>"; };
+		214EEED42AD969B500301919 /* BalanceControlVWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalanceControlVWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		214EEED82AD969B500301919 /* BalanceControlVWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWUITests.swift; sourceTree = "<group>"; };
+		214EEEDA2AD969B500301919 /* BalanceControlVWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		214EEEEA2AD96A4400301919 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		214EEEEC2AD96A6C00301919 /* SpeakersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersRepository.swift; sourceTree = "<group>"; };
+		214EEEEE2AD96A9000301919 /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
+		214EEEF02AD96AAC00301919 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		214EEEF22AD96AC900301919 /* MixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21B3B6072AD9632C0034932E /* Frameworks */ = {
+		214EEEB72AD969B400301919 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21B3B6172AD9632D0034932E /* Frameworks */ = {
+		214EEEC72AD969B500301919 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21B3B6212AD9632D0034932E /* Frameworks */ = {
+		214EEED12AD969B500301919 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,72 +81,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21B3B6012AD9632C0034932E = {
+		214EEEB12AD969B400301919 = {
 			isa = PBXGroup;
 			children = (
-				21B3B60C2AD9632C0034932E /* BalanceControlVW */,
-				21B3B61D2AD9632D0034932E /* BalanceControlVWTests */,
-				21B3B6272AD9632D0034932E /* BalanceControlVWUITests */,
-				21B3B60B2AD9632C0034932E /* Products */,
+				214EEEBC2AD969B400301919 /* BalanceControlVW */,
+				214EEECD2AD969B500301919 /* BalanceControlVWTests */,
+				214EEED72AD969B500301919 /* BalanceControlVWUITests */,
+				214EEEBB2AD969B400301919 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		21B3B60B2AD9632C0034932E /* Products */ = {
+		214EEEBB2AD969B400301919 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21B3B60A2AD9632C0034932E /* BalanceControlVW.app */,
-				21B3B61A2AD9632D0034932E /* BalanceControlVWTests.xctest */,
-				21B3B6242AD9632D0034932E /* BalanceControlVWUITests.xctest */,
+				214EEEBA2AD969B400301919 /* BalanceControlVW.app */,
+				214EEECA2AD969B500301919 /* BalanceControlVWTests.xctest */,
+				214EEED42AD969B500301919 /* BalanceControlVWUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21B3B60C2AD9632C0034932E /* BalanceControlVW */ = {
+		214EEEBC2AD969B400301919 /* BalanceControlVW */ = {
 			isa = PBXGroup;
 			children = (
-				21B3B60D2AD9632C0034932E /* BalanceControlVWApp.swift */,
-				21B3B60F2AD9632C0034932E /* ContentView.swift */,
-				21B3B6112AD9632D0034932E /* Assets.xcassets */,
-				21B3B6132AD9632D0034932E /* Preview Content */,
+				214EEEE92AD96A2F00301919 /* Data */,
+				214EEEE82AD96A2800301919 /* Repository */,
+				214EEEE72AD96A2000301919 /* View */,
+				214EEEBD2AD969B400301919 /* BalanceControlVWApp.swift */,
+				214EEEBF2AD969B400301919 /* ContentView.swift */,
+				214EEEC12AD969B400301919 /* Assets.xcassets */,
+				214EEEC32AD969B400301919 /* Preview Content */,
 			);
 			path = BalanceControlVW;
 			sourceTree = "<group>";
 		};
-		21B3B6132AD9632D0034932E /* Preview Content */ = {
+		214EEEC32AD969B400301919 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				21B3B6142AD9632D0034932E /* Preview Assets.xcassets */,
+				214EEEC42AD969B400301919 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		21B3B61D2AD9632D0034932E /* BalanceControlVWTests */ = {
+		214EEECD2AD969B500301919 /* BalanceControlVWTests */ = {
 			isa = PBXGroup;
 			children = (
-				21B3B61E2AD9632D0034932E /* BalanceControlVWTests.swift */,
+				214EEECE2AD969B500301919 /* BalanceControlVWTests.swift */,
 			);
 			path = BalanceControlVWTests;
 			sourceTree = "<group>";
 		};
-		21B3B6272AD9632D0034932E /* BalanceControlVWUITests */ = {
+		214EEED72AD969B500301919 /* BalanceControlVWUITests */ = {
 			isa = PBXGroup;
 			children = (
-				21B3B6282AD9632D0034932E /* BalanceControlVWUITests.swift */,
-				21B3B62A2AD9632D0034932E /* BalanceControlVWUITestsLaunchTests.swift */,
+				214EEED82AD969B500301919 /* BalanceControlVWUITests.swift */,
+				214EEEDA2AD969B500301919 /* BalanceControlVWUITestsLaunchTests.swift */,
 			);
 			path = BalanceControlVWUITests;
+			sourceTree = "<group>";
+		};
+		214EEEE72AD96A2000301919 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				214EEEEE2AD96A9000301919 /* SpeakerView.swift */,
+				214EEEF02AD96AAC00301919 /* SettingsView.swift */,
+				214EEEF22AD96AC900301919 /* MixView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		214EEEE82AD96A2800301919 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				214EEEEC2AD96A6C00301919 /* SpeakersRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		214EEEE92AD96A2F00301919 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				214EEEEA2AD96A4400301919 /* Speaker.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21B3B6092AD9632C0034932E /* BalanceControlVW */ = {
+		214EEEB92AD969B400301919 /* BalanceControlVW */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21B3B62E2AD9632D0034932E /* Build configuration list for PBXNativeTarget "BalanceControlVW" */;
+			buildConfigurationList = 214EEEDE2AD969B500301919 /* Build configuration list for PBXNativeTarget "BalanceControlVW" */;
 			buildPhases = (
-				21B3B6062AD9632C0034932E /* Sources */,
-				21B3B6072AD9632C0034932E /* Frameworks */,
-				21B3B6082AD9632C0034932E /* Resources */,
+				214EEEB62AD969B400301919 /* Sources */,
+				214EEEB72AD969B400301919 /* Frameworks */,
+				214EEEB82AD969B400301919 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -144,69 +183,69 @@
 			);
 			name = BalanceControlVW;
 			productName = BalanceControlVW;
-			productReference = 21B3B60A2AD9632C0034932E /* BalanceControlVW.app */;
+			productReference = 214EEEBA2AD969B400301919 /* BalanceControlVW.app */;
 			productType = "com.apple.product-type.application";
 		};
-		21B3B6192AD9632D0034932E /* BalanceControlVWTests */ = {
+		214EEEC92AD969B500301919 /* BalanceControlVWTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21B3B6312AD9632D0034932E /* Build configuration list for PBXNativeTarget "BalanceControlVWTests" */;
+			buildConfigurationList = 214EEEE12AD969B500301919 /* Build configuration list for PBXNativeTarget "BalanceControlVWTests" */;
 			buildPhases = (
-				21B3B6162AD9632D0034932E /* Sources */,
-				21B3B6172AD9632D0034932E /* Frameworks */,
-				21B3B6182AD9632D0034932E /* Resources */,
+				214EEEC62AD969B500301919 /* Sources */,
+				214EEEC72AD969B500301919 /* Frameworks */,
+				214EEEC82AD969B500301919 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				21B3B61C2AD9632D0034932E /* PBXTargetDependency */,
+				214EEECC2AD969B500301919 /* PBXTargetDependency */,
 			);
 			name = BalanceControlVWTests;
 			productName = BalanceControlVWTests;
-			productReference = 21B3B61A2AD9632D0034932E /* BalanceControlVWTests.xctest */;
+			productReference = 214EEECA2AD969B500301919 /* BalanceControlVWTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		21B3B6232AD9632D0034932E /* BalanceControlVWUITests */ = {
+		214EEED32AD969B500301919 /* BalanceControlVWUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21B3B6342AD9632D0034932E /* Build configuration list for PBXNativeTarget "BalanceControlVWUITests" */;
+			buildConfigurationList = 214EEEE42AD969B500301919 /* Build configuration list for PBXNativeTarget "BalanceControlVWUITests" */;
 			buildPhases = (
-				21B3B6202AD9632D0034932E /* Sources */,
-				21B3B6212AD9632D0034932E /* Frameworks */,
-				21B3B6222AD9632D0034932E /* Resources */,
+				214EEED02AD969B500301919 /* Sources */,
+				214EEED12AD969B500301919 /* Frameworks */,
+				214EEED22AD969B500301919 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				21B3B6262AD9632D0034932E /* PBXTargetDependency */,
+				214EEED62AD969B500301919 /* PBXTargetDependency */,
 			);
 			name = BalanceControlVWUITests;
 			productName = BalanceControlVWUITests;
-			productReference = 21B3B6242AD9632D0034932E /* BalanceControlVWUITests.xctest */;
+			productReference = 214EEED42AD969B500301919 /* BalanceControlVWUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		21B3B6022AD9632C0034932E /* Project object */ = {
+		214EEEB22AD969B400301919 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					21B3B6092AD9632C0034932E = {
+					214EEEB92AD969B400301919 = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					21B3B6192AD9632D0034932E = {
+					214EEEC92AD969B500301919 = {
 						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 21B3B6092AD9632C0034932E;
+						TestTargetID = 214EEEB92AD969B400301919;
 					};
-					21B3B6232AD9632D0034932E = {
+					214EEED32AD969B500301919 = {
 						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 21B3B6092AD9632C0034932E;
+						TestTargetID = 214EEEB92AD969B400301919;
 					};
 				};
 			};
-			buildConfigurationList = 21B3B6052AD9632C0034932E /* Build configuration list for PBXProject "BalanceControlVW" */;
+			buildConfigurationList = 214EEEB52AD969B400301919 /* Build configuration list for PBXProject "BalanceControlVW" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,36 +253,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 21B3B6012AD9632C0034932E;
-			productRefGroup = 21B3B60B2AD9632C0034932E /* Products */;
+			mainGroup = 214EEEB12AD969B400301919;
+			productRefGroup = 214EEEBB2AD969B400301919 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21B3B6092AD9632C0034932E /* BalanceControlVW */,
-				21B3B6192AD9632D0034932E /* BalanceControlVWTests */,
-				21B3B6232AD9632D0034932E /* BalanceControlVWUITests */,
+				214EEEB92AD969B400301919 /* BalanceControlVW */,
+				214EEEC92AD969B500301919 /* BalanceControlVWTests */,
+				214EEED32AD969B500301919 /* BalanceControlVWUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		21B3B6082AD9632C0034932E /* Resources */ = {
+		214EEEB82AD969B400301919 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B3B6152AD9632D0034932E /* Preview Assets.xcassets in Resources */,
-				21B3B6122AD9632D0034932E /* Assets.xcassets in Resources */,
+				214EEEC52AD969B400301919 /* Preview Assets.xcassets in Resources */,
+				214EEEC22AD969B400301919 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21B3B6182AD9632D0034932E /* Resources */ = {
+		214EEEC82AD969B500301919 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21B3B6222AD9632D0034932E /* Resources */ = {
+		214EEED22AD969B500301919 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,49 +292,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21B3B6062AD9632C0034932E /* Sources */ = {
+		214EEEB62AD969B400301919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B3B6102AD9632C0034932E /* ContentView.swift in Sources */,
-				21B3B60E2AD9632C0034932E /* BalanceControlVWApp.swift in Sources */,
+				214EEEEB2AD96A4400301919 /* Speaker.swift in Sources */,
+				214EEEED2AD96A6C00301919 /* SpeakersRepository.swift in Sources */,
+				214EEEC02AD969B400301919 /* ContentView.swift in Sources */,
+				214EEEF12AD96AAC00301919 /* SettingsView.swift in Sources */,
+				214EEEF32AD96AC900301919 /* MixView.swift in Sources */,
+				214EEEBE2AD969B400301919 /* BalanceControlVWApp.swift in Sources */,
+				214EEEEF2AD96A9000301919 /* SpeakerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21B3B6162AD9632D0034932E /* Sources */ = {
+		214EEEC62AD969B500301919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B3B61F2AD9632D0034932E /* BalanceControlVWTests.swift in Sources */,
+				214EEECF2AD969B500301919 /* BalanceControlVWTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21B3B6202AD9632D0034932E /* Sources */ = {
+		214EEED02AD969B500301919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B3B62B2AD9632D0034932E /* BalanceControlVWUITestsLaunchTests.swift in Sources */,
-				21B3B6292AD9632D0034932E /* BalanceControlVWUITests.swift in Sources */,
+				214EEEDB2AD969B500301919 /* BalanceControlVWUITestsLaunchTests.swift in Sources */,
+				214EEED92AD969B500301919 /* BalanceControlVWUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		21B3B61C2AD9632D0034932E /* PBXTargetDependency */ = {
+		214EEECC2AD969B500301919 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21B3B6092AD9632C0034932E /* BalanceControlVW */;
-			targetProxy = 21B3B61B2AD9632D0034932E /* PBXContainerItemProxy */;
+			target = 214EEEB92AD969B400301919 /* BalanceControlVW */;
+			targetProxy = 214EEECB2AD969B500301919 /* PBXContainerItemProxy */;
 		};
-		21B3B6262AD9632D0034932E /* PBXTargetDependency */ = {
+		214EEED62AD969B500301919 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21B3B6092AD9632C0034932E /* BalanceControlVW */;
-			targetProxy = 21B3B6252AD9632D0034932E /* PBXContainerItemProxy */;
+			target = 214EEEB92AD969B400301919 /* BalanceControlVW */;
+			targetProxy = 214EEED52AD969B500301919 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		21B3B62C2AD9632D0034932E /* Debug */ = {
+		214EEEDC2AD969B500301919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -355,7 +399,7 @@
 			};
 			name = Debug;
 		};
-		21B3B62D2AD9632D0034932E /* Release */ = {
+		214EEEDD2AD969B500301919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,7 +453,7 @@
 			};
 			name = Release;
 		};
-		21B3B62F2AD9632D0034932E /* Debug */ = {
+		214EEEDF2AD969B500301919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -438,7 +482,7 @@
 			};
 			name = Debug;
 		};
-		21B3B6302AD9632D0034932E /* Release */ = {
+		214EEEE02AD969B500301919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -467,7 +511,7 @@
 			};
 			name = Release;
 		};
-		21B3B6322AD9632D0034932E /* Debug */ = {
+		214EEEE22AD969B500301919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -487,7 +531,7 @@
 			};
 			name = Debug;
 		};
-		21B3B6332AD9632D0034932E /* Release */ = {
+		214EEEE32AD969B500301919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -507,7 +551,7 @@
 			};
 			name = Release;
 		};
-		21B3B6352AD9632D0034932E /* Debug */ = {
+		214EEEE52AD969B500301919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -525,7 +569,7 @@
 			};
 			name = Debug;
 		};
-		21B3B6362AD9632D0034932E /* Release */ = {
+		214EEEE62AD969B500301919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -546,43 +590,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21B3B6052AD9632C0034932E /* Build configuration list for PBXProject "BalanceControlVW" */ = {
+		214EEEB52AD969B400301919 /* Build configuration list for PBXProject "BalanceControlVW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21B3B62C2AD9632D0034932E /* Debug */,
-				21B3B62D2AD9632D0034932E /* Release */,
+				214EEEDC2AD969B500301919 /* Debug */,
+				214EEEDD2AD969B500301919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21B3B62E2AD9632D0034932E /* Build configuration list for PBXNativeTarget "BalanceControlVW" */ = {
+		214EEEDE2AD969B500301919 /* Build configuration list for PBXNativeTarget "BalanceControlVW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21B3B62F2AD9632D0034932E /* Debug */,
-				21B3B6302AD9632D0034932E /* Release */,
+				214EEEDF2AD969B500301919 /* Debug */,
+				214EEEE02AD969B500301919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21B3B6312AD9632D0034932E /* Build configuration list for PBXNativeTarget "BalanceControlVWTests" */ = {
+		214EEEE12AD969B500301919 /* Build configuration list for PBXNativeTarget "BalanceControlVWTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21B3B6322AD9632D0034932E /* Debug */,
-				21B3B6332AD9632D0034932E /* Release */,
+				214EEEE22AD969B500301919 /* Debug */,
+				214EEEE32AD969B500301919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21B3B6342AD9632D0034932E /* Build configuration list for PBXNativeTarget "BalanceControlVWUITests" */ = {
+		214EEEE42AD969B500301919 /* Build configuration list for PBXNativeTarget "BalanceControlVWUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21B3B6352AD9632D0034932E /* Debug */,
-				21B3B6362AD9632D0034932E /* Release */,
+				214EEEE52AD969B500301919 /* Debug */,
+				214EEEE62AD969B500301919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 21B3B6022AD9632C0034932E /* Project object */;
+	rootObject = 214EEEB22AD969B400301919 /* Project object */;
 }
