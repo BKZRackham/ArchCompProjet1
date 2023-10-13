@@ -11,7 +11,10 @@ import SwiftUI
 struct BalanceControlVWApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                SettingsView()
+            }
+            
         }
     }
 }

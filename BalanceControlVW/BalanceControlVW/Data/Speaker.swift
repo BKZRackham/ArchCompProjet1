@@ -13,7 +13,7 @@ struct Speaker : Hashable{
     
     var name : String
     var mute : Bool
-    var bass : Int
-    var mid : Int
-    var treble : Int
+    var bass : Double
+    var mid : Double
+    var treble : Double
 }
