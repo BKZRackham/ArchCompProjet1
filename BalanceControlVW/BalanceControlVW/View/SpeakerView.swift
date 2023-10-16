@@ -16,6 +16,8 @@ struct SpeakerView: View {
     
     var body: some View {
         NavigationStack{
+            
+            //Utilisation d'un binding sur la valeur booléenne du Toggle pour lancer la bonne fonction depuis le Repository qui agit comme une classe statique dans cette vue
             let binding = Binding<Bool> {
                 speakerOn
             } set: { _ in
@@ -35,6 +37,7 @@ struct SpeakerView: View {
                     .resizable()
                     .scaledToFit()
                 
+                //Affichage du Toggle lié à la valeur de mute dans le speaker
                 Toggle(isOn: binding, label: {
                     VStack{
                         Text("\(speaker.name)")
@@ -43,15 +46,16 @@ struct SpeakerView: View {
                     }
                 })
                 
+                // Lien de navigation sous forme d'un bouton qui affichera les détails du speaker
                 
-                NavigationLink(destination:MixView(speakerOn: $speakerOn,speaker: $repository.speakers[0]),isActive: $showMix){
+                NavigationLink(destination:MixView(speakerOn: $speakerOn,speaker: $speaker),isActive: $showMix){
                     Button{showMix = true} label: {
                         Text("Mix")
                             .frame(maxWidth: .infinity)
                     }
                     .padding(16)
                     .buttonStyle(.borderedProminent)
-                }.navigationTitle("\(speaker.name)")
+                }
             }
             
         }

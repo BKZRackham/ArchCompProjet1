@@ -17,6 +17,7 @@ struct SettingsView: View {
         NavigationStack{
             VStack{
                 
+                // Sliders pour affichage du Volume et de la Balance
                 HStack{
                     Text("Volume").frame(maxWidth: .infinity, alignment: .leading)
                     Text("\(Int(repository.volume))").frame(maxWidth: .infinity, alignment: .trailing)
@@ -32,6 +33,7 @@ struct SettingsView: View {
                     Text("\(Int(repository.balance))").frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 .padding(16)
+                // Le Slider de la Balance avec une fonction permettant d'agir sur les valeurs de mute des speakers. Ce changement est répercuté sur les Toggle dans la SpeakerView
                 Slider(value:$repository.balance, in:-4...4, step: 1){
                     editing in if(Int(repository.balance) == -4){
                         repository.speakers[0].mute = true
@@ -47,12 +49,14 @@ struct SettingsView: View {
                 .padding(.horizontal,16)
                 .padding(.bottom,32)
                 
+                
+                //Affichage des Speakers en ajoutant des SpeakerView une pour chaque speaker dans le repository
                 HStack{
                     ForEach($repository.speakers, id: \.self) { $speaker in
                         SpeakerView(speaker: $speaker, speakerOn: $speaker.mute)
                     }
                 }
-            }
+            }.navigationTitle("Settings")
         }
         
         

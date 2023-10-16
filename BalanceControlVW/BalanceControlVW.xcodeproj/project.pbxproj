@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		214EEEBE2AD969B400301919 /* BalanceControlVWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEBD2AD969B400301919 /* BalanceControlVWApp.swift */; };
-		214EEEC02AD969B400301919 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEEBF2AD969B400301919 /* ContentView.swift */; };
 		214EEEC22AD969B400301919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214EEEC12AD969B400301919 /* Assets.xcassets */; };
 		214EEEC52AD969B400301919 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214EEEC42AD969B400301919 /* Preview Assets.xcassets */; };
 		214EEECF2AD969B500301919 /* BalanceControlVWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EEECE2AD969B500301919 /* BalanceControlVWTests.swift */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		214EEEBA2AD969B400301919 /* BalanceControlVW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalanceControlVW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214EEEBD2AD969B400301919 /* BalanceControlVWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceControlVWApp.swift; sourceTree = "<group>"; };
-		214EEEBF2AD969B400301919 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		214EEEC12AD969B400301919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		214EEEC42AD969B400301919 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		214EEECA2AD969B500301919 /* BalanceControlVWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalanceControlVWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 				214EEEE82AD96A2800301919 /* Repository */,
 				214EEEE72AD96A2000301919 /* View */,
 				214EEEBD2AD969B400301919 /* BalanceControlVWApp.swift */,
-				214EEEBF2AD969B400301919 /* ContentView.swift */,
 				214EEEC12AD969B400301919 /* Assets.xcassets */,
 				214EEEC32AD969B400301919 /* Preview Content */,
 			);
@@ -298,7 +295,6 @@
 			files = (
 				214EEEEB2AD96A4400301919 /* Speaker.swift in Sources */,
 				214EEEED2AD96A6C00301919 /* SpeakersRepository.swift in Sources */,
-				214EEEC02AD969B400301919 /* ContentView.swift in Sources */,
 				214EEEF12AD96AAC00301919 /* SettingsView.swift in Sources */,
 				214EEEF32AD96AC900301919 /* MixView.swift in Sources */,
 				214EEEBE2AD969B400301919 /* BalanceControlVWApp.swift in Sources */,

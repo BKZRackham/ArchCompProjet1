@@ -9,49 +9,55 @@ import SwiftUI
 
 struct MixView: View {
     
-    @StateObject var repository = SpeakersRepository.shared
     @Binding  var speakerOn : Bool
     @Binding var speaker : Speaker
     
+    //Cette vue va contenir les détails de toutes les valeurs de chaque speaker sous forme de Sliders
     
     var body: some View {
-        VStack{
-            Toggle(isOn: $speakerOn, label: {
-                VStack{
-                    Text("Speaker on")
-                        .font(.system(size: 20, weight: .bold, design: .default))
-                    Text("mute or unmute")
+        NavigationStack{
+            VStack{
+                
+                //On réaffiche le Toggle lié au Speaker
+                Toggle(isOn: $speakerOn, label: {
+                    VStack{
+                        Text("Speaker on")
+                            .font(.system(size: 20, weight: .bold, design: .default))
+                        Text("mute or unmute")
+                    }
+                }).padding(25)
+                
+                
+                //Affichage des 3 Sliders avec un titre associé à chacun.
+                HStack{
+                    Text("Bass").frame(maxWidth: .infinity, alignment: .leading)
+                    Text("\(Int(speaker.bass))").frame(maxWidth: .infinity, alignment: .trailing)
                 }
-            }).padding(25)
-            
-            
-            HStack{
-                Text("Bass").frame(maxWidth: .infinity, alignment: .leading)
-                Text("\(Int(speaker.bass))").frame(maxWidth: .infinity, alignment: .trailing)
-            }
                 .padding(.horizontal,16)
-            Slider(value:$speaker.bass, in:-15...15,step:1)
+                Slider(value:$speaker.bass, in:-15...15,step:1)
+                    .padding(.horizontal,16)
+                    .padding(.bottom,10)
+                
+                HStack{
+                    Text("Mid").frame(maxWidth: .infinity, alignment: .leading)
+                    Text("\(Int(speaker.mid))").frame(maxWidth: .infinity, alignment: .trailing)
+                }
                 .padding(.horizontal,16)
-                .padding(.bottom,10)
-            
-            HStack{
-                Text("Mid").frame(maxWidth: .infinity, alignment: .leading)
-                Text("\(Int(speaker.mid))").frame(maxWidth: .infinity, alignment: .trailing)
-            }
+                Slider(value:$speaker.mid, in:-15...15,step:1)
+                    .padding(.horizontal,16)
+                    .padding(.bottom,10)
+                
+                HStack{
+                    Text("Treble").frame(maxWidth: .infinity, alignment: .leading)
+                    Text("\(Int(speaker.treble))").frame(maxWidth: .infinity, alignment: .trailing)
+                }
                 .padding(.horizontal,16)
-            Slider(value:$speaker.mid, in:-15...15,step:1)
-                .padding(.horizontal,16)
-                .padding(.bottom,10)
-            
-            HStack{
-                Text("Treble").frame(maxWidth: .infinity, alignment: .leading)
-                Text("\(Int(speaker.treble))").frame(maxWidth: .infinity, alignment: .trailing)
-            }
-            .padding(.horizontal,16)
-            Slider(value:$speaker.treble, in:-15...15,step:1)
-                .padding(.horizontal,16)
-                .padding(.bottom,10)
-        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                Slider(value:$speaker.treble, in:-15...15,step:1)
+                    .padding(.horizontal,16)
+                    .padding(.bottom,10)
+            }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        }.navigationTitle("\(speaker.name)")
+        
     }
 }
 

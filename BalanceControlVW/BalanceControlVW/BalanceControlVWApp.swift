@@ -13,7 +13,7 @@ struct BalanceControlVWApp: App {
         WindowGroup {
             NavigationStack{
                 SettingsView()
-            }
+            }.navigationTitle("Settings")
             
         }
     }
