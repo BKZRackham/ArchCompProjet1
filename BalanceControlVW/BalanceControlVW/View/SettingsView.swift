@@ -10,10 +10,12 @@ import SwiftUI
 struct SettingsView: View {
     
     @StateObject var repository = SpeakersRepository.shared
-    @State var speakerOn : Bool = true
+    
     
     
     var body: some View {
+        
+        
         NavigationStack{
             VStack{
                 
@@ -53,7 +55,7 @@ struct SettingsView: View {
                 //Affichage des Speakers en ajoutant des SpeakerView une pour chaque speaker dans le repository
                 HStack{
                     ForEach($repository.speakers, id: \.self) { $speaker in
-                        SpeakerView(speaker: $speaker, speakerOn: $speaker.mute)
+                        SpeakerView(speaker: $speaker, speakerOn: speaker.mute)
                     }
                 }
             }.navigationTitle("Settings")
@@ -66,7 +68,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        let test = true
-        SettingsView(speakerOn: test)
+        SettingsView()
     }
 }

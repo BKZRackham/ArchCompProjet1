@@ -15,8 +15,8 @@ class SpeakersRepository : ObservableObject{
     
     //Représentation de la vérité des valeurs contenues dans l'application, les deux speakers, plus les valeurs de volume et de balance
     @Published var speakers = [
-        Speaker(name: "Left speaker", mute: true, bass: 0.0, mid: 0.0, treble: 0.0),
-        Speaker(name: "Right speaker", mute: true, bass: 0.0, mid: 0.0, treble: 0.0)
+        Speaker(name: "Left speaker", mute: true, bass: 0.0, mid: 0.0, treble: 0.0, id: 0),
+        Speaker(name: "Right speaker", mute: true, bass: 0.0, mid: 0.0, treble: 0.0, id: 1)
     ]
     
     //Utilisation d'UserDefaults pour la persistance des données même après destruction de l'application
@@ -33,8 +33,8 @@ class SpeakersRepository : ObservableObject{
     }
     
     init(speakers: [Speaker] = [
-        Speaker(name: "Left speaker", mute: true, bass: 0.0, mid: 0.0, treble: 0.0),
-        Speaker(name: "Right speaker", mute: true, bass: 0.0, mid: 0.0, treble: 0.0)
+        Speaker(name: "Left speaker", mute: true, bass: 0.0, mid: 0.0, treble: 0.0, id: 0),
+        Speaker(name: "Right speaker", mute: true, bass: 0.0, mid: 0.0, treble: 0.0, id: 1)
     ], volume: Double, balance: Double) {
         self.speakers = speakers
         self.volume = UserDefaults.standard.object(forKey: "volume") as? Double ?? 0.0

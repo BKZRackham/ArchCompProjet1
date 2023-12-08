@@ -11,11 +11,18 @@ struct MixView: View {
     
     @Binding  var speakerOn : Bool
     @Binding var speaker : Speaker
+    @StateObject var repository = SpeakersRepository.shared
+    var nombre : Int
+    
     
     //Cette vue va contenir les détails de toutes les valeurs de chaque speaker sous forme de Sliders
     
     var body: some View {
+        
+        
         NavigationStack{
+            
+            
             VStack{
                 
                 //On réaffiche le Toggle lié au Speaker
@@ -31,7 +38,7 @@ struct MixView: View {
                 //Affichage des 3 Sliders avec un titre associé à chacun.
                 HStack{
                     Text("Bass").frame(maxWidth: .infinity, alignment: .leading)
-                    Text("\(Int(speaker.bass))").frame(maxWidth: .infinity, alignment: .trailing)
+                    Text("\(Int(repository.speakers[nombre].bass))").frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 .padding(.horizontal,16)
                 Slider(value:$speaker.bass, in:-15...15,step:1)
@@ -40,7 +47,7 @@ struct MixView: View {
                 
                 HStack{
                     Text("Mid").frame(maxWidth: .infinity, alignment: .leading)
-                    Text("\(Int(speaker.mid))").frame(maxWidth: .infinity, alignment: .trailing)
+                    Text("\(Int(repository.speakers[nombre].mid))").frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 .padding(.horizontal,16)
                 Slider(value:$speaker.mid, in:-15...15,step:1)
@@ -49,7 +56,7 @@ struct MixView: View {
                 
                 HStack{
                     Text("Treble").frame(maxWidth: .infinity, alignment: .leading)
-                    Text("\(Int(speaker.treble))").frame(maxWidth: .infinity, alignment: .trailing)
+                    Text("\(Int(repository.speakers[nombre].treble))").frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 .padding(.horizontal,16)
                 Slider(value:$speaker.treble, in:-15...15,step:1)
@@ -63,7 +70,7 @@ struct MixView: View {
 
 struct MixView_Previews: PreviewProvider {
     static var previews: some View {
-        let speaktest = Speaker (name:"Test speaker",mute:false,bass:0,mid:0,treble:0)
-        MixView(speakerOn: .constant(true),speaker: .constant(speaktest))
+        let speaktest = Speaker (name:"Test speaker",mute:false,bass:0,mid:0,treble:0, id: 0)
+        MixView(speakerOn: .constant(true),speaker: .constant(speaktest),nombre:0)
     }
 }

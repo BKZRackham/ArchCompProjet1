@@ -16,4 +16,5 @@ struct Speaker : Hashable{
     var bass : Double
     var mid : Double
     var treble : Double
+    var id : Int
 }

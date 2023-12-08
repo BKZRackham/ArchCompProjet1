@@ -10,7 +10,7 @@ import SwiftUI
 struct SpeakerView: View {
     
     @Binding var speaker : Speaker
-    @Binding  var speakerOn : Bool
+    @State  var speakerOn : Bool
     @StateObject var repository = SpeakersRepository.shared
     @State private var showMix = false
     
@@ -48,7 +48,7 @@ struct SpeakerView: View {
                 
                 // Lien de navigation sous forme d'un bouton qui affichera les détails du speaker
                 
-                NavigationLink(destination:MixView(speakerOn: $speakerOn,speaker: $speaker),isActive: $showMix){
+                NavigationLink(destination:MixView(speakerOn: $speakerOn,speaker: $speaker,nombre: speaker.id),isActive: $showMix){
                     Button{showMix = true} label: {
                         Text("Mix")
                             .frame(maxWidth: .infinity)
@@ -67,8 +67,8 @@ struct SpeakerView: View {
     
     struct SpeakerView_Previews: PreviewProvider {
         static var previews: some View {
-            let speaktest = Speaker (name:"Test speaker",mute:false,bass:0,mid:0,treble:0)
-            SpeakerView(speaker: .constant(speaktest), speakerOn: .constant(true))
+            let speaktest = Speaker (name:"Test speaker",mute:false,bass:0,mid:0,treble:0, id:0)
+            SpeakerView(speaker: .constant(speaktest), speakerOn: true)
         }
     }
 }
